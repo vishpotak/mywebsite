@@ -1,0 +1,329 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    color: black;
+}
+
+body {
+    background-color: rgba(225,225,225,1);
+    /* background-image: url(/images/background.jpg); */
+    background-size: cover;
+    background-blend-mode: multiply;
+    /* padding-bottom: 30px; */
+}
+
+
+
+
+
+/* HEADER NAVIGATION */
+
+.header-nav {
+    display: flex;
+    align-items:center;     /* aligns h3 and ul vertically centre*/
+}
+
+.header-nav ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+
+.header-nav li {
+    display: inline;      /* to display pas future commentsb inline */
+}
+
+.header-nav a {
+   display: inline-block;
+    padding: 0.7em;
+    color: black;              /* apllies to h3 also */
+    text-decoration: none;
+}
+
+.header-nav a:hover {
+    background-color: rgba(217, 217, 217, 1);     /* applies to a element inclusing h and ul*/
+}
+
+.header-nav {
+    text-align: end;
+    font-size: 1.3em;           /*  elemnt in flex aling to end */
+    font-weight: normal;
+}
+
+.header-nav h5 {
+    text-align: left;
+    font-size: 1.3em;         /* styling hello. */
+    font-weight: bold;
+    margin: 0;
+}
+
+/* HEADER  */
+
+
+
+
+
+
+/* INDEX BODY */
+
+.main-body{
+    margin: 1em;
+}
+
+.container {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-bottom: 100px;
+}
+
+.main-body h1 {
+    margin-top: 10px;
+} 
+
+#body-header {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: rgba(40, 75, 99, 1);
+    font-size: 5em;
+    text-align: center;
+}
+
+.main-body img {
+    width: 300px;
+    border-radius: 2%;
+    padding-right: 30px;   /* hehe */
+}
+
+.body-div {
+    display: flex;
+    align-items: center;
+}
+
+.main-body p {
+    text-align: justify;
+    color: rgba(53, 53, 53, 1);
+    padding-right: 30px;
+}
+
+
+
+/*PAST AND FUTURE*/
+
+
+.main-body-cm{
+    margin: 1em;
+}
+
+.container-cm {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+#body-header-cm {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 3em;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 90px;
+}
+
+.main-body-cm img {
+    width: 300px;
+    padding-right: 0px;
+    max-width: 50%;
+}
+
+#design {
+    height: 185px;
+}
+
+.body-div-cm {
+    display: flex;
+    align-items:initial
+}
+
+.body-div-cm p{
+    flex-grow: 1;
+    align-items: flex-end;
+}
+
+.main-body-cm p {
+    text-align: justify;
+    color: rgba(53, 53, 53, 1);
+    padding-right: 30px;
+}
+
+#body-div-cm-layout {
+    padding-right: 290px;
+}
+
+
+
+/* COMMENTS */
+
+.main-body-c{
+    margin: 1em;
+}
+
+.container-c {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+    padding-bottom: 100px;
+}
+
+#body-header-c {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color: black;
+    font-size: 3em;
+    text-align: left;
+    margin-top: 60px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    margin-top: 90px;
+}
+
+.main-body-c img {
+    width: 300px;
+    padding-right: 0px;
+    max-width: 50%;
+}
+
+#design {
+    height: 185px;
+}
+
+.body-div-c {
+    display: flex;
+    align-items:initial
+}
+
+.body-div-c p{
+    flex-grow: 1;
+    align-items: flex-end;
+}
+
+.main-body-c p {
+    text-align: justify;
+    padding-right: 100px;
+}
+
+#body-div-c-layout {
+    padding-right: 290px;
+}
+
+/* COMMENTS */
+
+/* TABELE */
+
+.content-table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    min-width: 400px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .content-table thead tr {
+    background-color: rgba(60, 110, 113, 1);
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  .content-table th,
+  .content-table td {
+    padding: 12px 15px;
+  }
+  
+  .content-table tbody tr {
+    border-bottom: 1px solid #dddddd;
+  }
+  
+  .content-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+  }
+  
+  .content-table tbody tr:last-of-type {
+    border-bottom: 2px solid rgba(60, 110, 113, 1);
+  }
+  
+  .content-table tbody tr.active-row {
+    font-weight: bold;
+    color: rgba(60, 110, 113, 1);
+  }
+
+
+
+
+
+/* FOOTER */
+
+.main-footer {
+    background-color: rgba(225,225,225,1);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: black;
+}
+
+.main-footer img {
+    width: 20px;
+    height: 20px;
+}
+
+.footer-nav {
+    display: flex;
+    align-items:center;     /* aligns h3 and ul vertically centre*/
+}
+
+.footer-nav ul {
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li {
+    display: inline;      /* to display pas future commentsb inline */
+}
+
+.footer-nav a {
+    display: inline-block;
+     padding: 1em;
+     color: black;              /* apllies to also */
+     text-decoration: none;
+ }
+
+ /* SETTING MARGIN FOR FOOTER INEFFECTIVE WAY*/
+
+ .footer-nav {
+    margin: 0;
+ }
+
+ h6 {
+    margin: 0;
+    margin-left: 12px;
+ }
+
+.footer-nav ul {
+    margin: 0;
+}
